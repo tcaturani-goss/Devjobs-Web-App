@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Link to style sheet and page title -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Challenge | Devjobs web app | Teano Goss</title>
+  </head>
+  <body>
+    <main>
+      <div class="header-container">
+        <div class="header-content flex">
+          <img src="/desktop/logo.svg" alt="devjobs logo" class="mobile-logo" />
+          <div class="light-dark-container">
+            <img
+              src="/desktop/icon-sun.svg"
+              alt="icon of sun for light mode"
+              class="sun-icon"
+            />
+            <label class="light-dark-switch">
+              <input type="checkbox" />
+              <span class="slider round" onclick="lightDarkSlider()"></span>
+            </label>
+            <img
+              src="/desktop/icon-moon.svg"
+              alt="icon of moon for dark mode"
+              class="moon-icon"
+            />
+          </div>
+        </div>
+      </div>
+      <img src="/logos/scoot.svg" alt="scoot logo" class="logo-scoot-page" />
+      <div class="scootpage-bx">
+        <div class="title-txt-group-page">
+          <h1>Scoot</h1>
+          <h2>scoot.com</h2>
+        </div>
+        <div class="site-button">
+          <button class="company-site-button">Company Site</button>
+        </div>
+      </div>
+      <div class="scootpage-tile-container scoot-bx">
+        <div class="title-txt-group-scoot">
+          <div class="txt-group">
+            <p>1w ago &bull; Part Time</p>
+            <h1>Senior Software Engineer</h1>
+            <h3 class="country-txt">United Kingdom</h3>
+          </div>
+          <div class="apply-button-one">
+            <button class="applynow-button-one">Apply Now</button>
+          </div>
+        </div>
+        <p class="scootpage-text">
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus
+          hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet
+          vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin
+          laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor
+          eu nibh. Nullam mollis. Ut justo. Suspendisse potenti. Sed egestas,
+          ante et vulputate volutpat, eros pede semper est, vitae luctus metus
+          libero eu augue. Morbi purus libero, faucibus adipiscing, commodo
+          quis, gravida id, est. Sed lectus. Praesent elementum hendrerit
+          tortor. Sed semper lorem at felis. Vestibulum volutpat, lacus a
+          ultrices sagittis, mi neque euismod dui, eu pulvinar nunc sapien
+          ornare nisl. Phasellus pede arcu, dapibus eu, fermentum et, dapibus
+          sed, urna.
+        </p>
+        <div class="req-txtBx">
+          <h1>Requirements</h1>
+          <p class="scootpage-text-two">
+            Morbi interdum mollis sapien. Sed ac risus. Phasellus lacinia, magna
+            a ullamcorper laoreet, lectus arcu pulvinar risus, vitae facilisis
+            libero dolor a purus. Sed vel lacus. Mauris nibh felis, adipiscing
+            varius, adipiscing in, lacinia vel, tellus. Suspendisse ac urna.
+            Etiam pellentesque mauris ut lectus. Nunc tellus ante, mattis eget,
+            gravida vitae, ultricies ac, leo. Integer leo pede, ornare a,
+            lacinia eu, vulputate vel, nisl.
+          </p>
+        </div>
+        <div class="req-list-dot">
+          <ul>
+            <li>Morbi interdum mollis sapien. Sed</li>
+            <li>
+              Phasellus lacinia magna a ullamcorper laoreet, lectus arcu
+              pulvinar risus
+            </li>
+            <li>
+              Mauris nibh felis, adipiscing varius, adipiscing in, lacinia vel,
+              tellus. Suspendisse ac urna. Etiam pellentesque mauris ut lectus.
+            </li>
+            <li>Morbi interdum mollis sapien. Sed</li>
+          </ul>
+        </div>
+        <h1>What You Will Do</h1>
+        <p class="scootpage-text-two">
+          Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae
+          luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing,
+          commodo quis, gravida id, est. Sed lectus. Praesent elementum
+          hendrerit tortor. Sed semper lorem at felis. Vestibulum volutpat,
+          lacus a ultrices sagittis, mi neque euismod dui, eu pulvinar nunc
+          sapien ornare nisl. Phasellus pede arcu, dapibus eu, fermentum et,
+          dapibus sed, urna.
+        </p>
+        <div class="req-list-num">
+          <ol>
+            <li>Morbi interdum mollis sapien. Sed</li>
+            <li>
+              Phasellus lacinia magna a ullamcorper laoreet, lectus arcu
+              pulvinar risus
+            </li>
+            <li>
+              Mauris nibh felis, adipiscing varius, adipiscing in, lacinia vel,
+              tellus. Suspendisse ac urna. Etiam pellentesque mauris ut lectus.
+            </li>
+            <li>Morbi interdum mollis sapien. Sed</li>
+          </ol>
+        </div>
+      </div>
+    </main>
+    <script>
+      function lightDarkSlider() {
+        const body = document.body;
+        body.classList.toggle("dark");
+
+        const h1Elements = document.getElementsByTagName("h1");
+        h1Elements.classList.toggle("h1-dark");
+
+        const el = document.querySelectorAll("p");
+        el.classList.toggle("p-dark");
+      }
+    </script>
+  </body>
+  <footer>
+    <div class="applyBtn-two-container">
+      <div class="footer-title-container">
+        <h1>Senior Software Engineer</h1>
+        <p>So Digital Inc.</p>
+      </div>
+      <div class="apply-button-two">
+        <button class="applynow-button-two">Apply Now</button>
+      </div>
+    </div>
+  </footer>
+</html>
