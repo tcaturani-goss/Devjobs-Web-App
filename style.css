@@ -559,7 +559,7 @@ ol li::marker {
 .header-container {
   height: 8.5rem;
   width: 100%;
-  background-image: url(bg-pattern-header.svg);
+  background-image: url(bg-pattern-header);
   background-repeat: no-repeat;
 }
 .header-content {
