@@ -925,7 +925,7 @@ h3 {
   .header-container {
     height: 8.5rem;
     width: 100vw;
-    background-image: url(/desktop/bg-pattern-header.svg);
+    background-image: url(bg-pattern-header.svg);
     background-repeat: no-repeat;
   }
   .mobile-logo {
